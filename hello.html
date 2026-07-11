@@ -1,11 +1,10 @@
-<!DOCTYPE html>
 <html>
-  <body>
-    <script>
-       var newURL = window.location.protocol + "//" + window.location.host + window.location.pathname
-      newURL
-    </script>
-
-  </body>
-</html>
+  <button id="mybutton">click me</button>
+  <script>
+    var greeting = "hello, ";
+    var button = document.getElementById("mybutton");
+    button.person_name = "Bob";
+    button.addEventListener(
+        "click", () => alert(greeting + button.person_name + "."), false);
+  </script>
 </html>
